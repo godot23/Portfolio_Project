@@ -1,0 +1,61 @@
+:root{
+    --bg: white;
+    --font: darkblue;
+    --bord: skyblue;
+    --head: rgb(68, 64, 64);
+}
+
+body{
+    background-color: var(--bg);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat (4, 1fr);
+    border-color: var(--bord);
+    padding: 10px;
+}   
+
+.work{
+    grid-column: 1;
+    grid-row: 1 / 4; 
+}
+
+.box1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.box2{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box3{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.box4{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.box5{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+header{
+    background-color: var(--head);
+
+}
+
+header h1{
+    color: var(--head);
+    background-color: var(--bord);
+    text-align: left;
+}
