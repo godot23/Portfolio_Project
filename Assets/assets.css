@@ -1,6 +1,6 @@
 :root{
     --bg: white;
-    --font: darkblue;
+    --font: rgb(111, 111, 209);
     --bord: skyblue;
     --head: rgb(68, 64, 64);
 }
@@ -58,6 +58,21 @@ main{
     padding: 20px;
 }
 
+body section{
+    padding: 40px;
+    color: var(--font);
+    text-indent: 20%;
+    text-align: left;
+}
+
+body section h3{
+    font-size: .8em;
+}
+
+.banner{
+    
+}
+
 header{
     display: flex;
     background-color: var(--head);
@@ -68,14 +83,15 @@ header{
 header h1{
     position: relative;
     background-color: var(--bord);
-    font-size: 1.4em;
+    font-size: 1.8em;
     width: 20%;
     height: 80%;
-    top: 10%;
+    top: -14%;
     text-align: right;
     text-indent: 30%;
     display: grid;
     align-items: center;
+    color: rgb(79, 73, 73);
 }
 
 header nav{
