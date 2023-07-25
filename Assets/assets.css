@@ -14,6 +14,18 @@ body{
     text-align: left;
 }
 
+#about_me h3{
+    font-size: 1.2em;
+    position: relative;
+    left: 600px;
+    text-indent: 0%;
+    text-align: left;
+}
+
+/* .banner{
+    max-width: 100%;
+} */
+
 main{
     display: grid;
     grid-template-columns: repeat (3, 1fr);
@@ -22,10 +34,7 @@ main{
     border: 20px;
     border-color: var(--bord);
     padding: 20px;
-}
-
-.about{
-
+    
 }
 
 .work{
@@ -41,7 +50,16 @@ main{
     top: 30px;
     background-color: skyblue;
     max-width: 300px;
-    right: 3%;
+    right: 4.2%;
+    top: 30%;
+}
+
+.section_title_large{
+    position: relative;
+    top: 30px;
+    background-color: skyblue;
+    max-width: 300px;
+    right: 2.3%;
     top: 30%;
 }
 
@@ -50,6 +68,10 @@ main{
     grid-row: 1 / 2;
     padding: 30px;
     border: 6px solid var(--bord);
+    height: 300px;
+    /* background-image: url(Surf.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .box1 h2, .box1 h3{
     margin: 0px;
@@ -103,6 +125,11 @@ body section h3{
     text-align: left;
 }
 
+.contact h3, .contact a{
+    position: relative;
+    text-align: left;
+}
+
 header{
     display: flex;
     background-color: var(--head);
@@ -126,7 +153,12 @@ header h1{
 
 
 footer{
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: flex-start;
 }
 
 header nav{
@@ -140,4 +172,11 @@ header h3{
 
 header a{
     color:azure;
+}
+
+@media screen and (max-width: 768px) {
+    main .about_me, main .class, main .contact, main header{
+        flex-direction: column;
+    }
+
 }
