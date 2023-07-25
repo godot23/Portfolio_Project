@@ -45,11 +45,6 @@ body{
     color: #7D32CD;
 }
 
-/* .banner{
-    position: relative;
-    
-} */
-
 main{
     display: grid;
     grid-template-columns: repeat (3, 1fr);
@@ -80,9 +75,9 @@ main{
 
 .section_title_large{
     position: relative;
-    top: 30px;
     background-color: skyblue;
     max-width: 300px;
+    height: 50px;
     right: 1.7%;
     top: 91%;
 }
