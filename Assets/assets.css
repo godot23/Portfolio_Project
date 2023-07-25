@@ -1,12 +1,14 @@
 :root{
     --bg: white;
-    --font: rgb(111, 111, 209);
+    --font: #7D32CD;
     --bord: skyblue;
     --head: rgb(68, 64, 64);
 }
+
 html{
     overflow-x: hidden;
 }
+
 .background{
     position: absolute;
     background-image: url("Swirly\ Flowers.jpg");
@@ -25,8 +27,12 @@ body{
     background-color: var(--bg);
 }
 
+.head_section h3 pre{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .about{
-    color:var(--font);
+    color: #7D32CD;
     text-align: left;
 }
 
@@ -36,6 +42,7 @@ body{
     left: 600px;
     text-indent: 1%;
     text-align: left;
+    color: #7D32CD;
 }
 
 /* .banner{
@@ -82,11 +89,11 @@ main{
 
 .line{
     background-color: blue;
-    height: 1200px;
+    height: 1080px;
     width: 4px;
     position: absolute;
     left: 20%;
-    top: 10%;
+    top: 8%;
 }
 
 .box1{
@@ -181,10 +188,10 @@ header h1{
 footer{
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    font-size: 1.6em;
 }
 
 header nav{
