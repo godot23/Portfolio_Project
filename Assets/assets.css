@@ -4,6 +4,22 @@
     --bord: skyblue;
     --head: rgb(68, 64, 64);
 }
+html{
+    overflow-x: hidden;
+}
+.background{
+    position: absolute;
+    background-image: url("Swirly\ Flowers.jpg");
+    background-origin: border-box;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
 
 body{
     background-color: var(--bg);
@@ -18,12 +34,13 @@ body{
     font-size: 1.2em;
     position: relative;
     left: 600px;
-    text-indent: 0%;
+    text-indent: 1%;
     text-align: left;
 }
 
 /* .banner{
-    max-width: 100%;
+    position: relative;
+    
 } */
 
 main{
@@ -50,7 +67,7 @@ main{
     top: 30px;
     background-color: skyblue;
     max-width: 300px;
-    right: 4.2%;
+    right: 2.3%;
     top: 30%;
 }
 
@@ -59,8 +76,17 @@ main{
     top: 30px;
     background-color: skyblue;
     max-width: 300px;
-    right: 2.3%;
-    top: 30%;
+    right: 1.7%;
+    top: 91%;
+}
+
+.line{
+    background-color: blue;
+    height: 1200px;
+    width: 4px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
 }
 
 .box1{
@@ -69,10 +95,10 @@ main{
     padding: 30px;
     border: 6px solid var(--bord);
     height: 300px;
-    /* background-image: url(Surf.jpg); */
+    /* background-image: url(Surf.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    object-fit: scale-down; */
+}   
 .box1 h2, .box1 h3{
     margin: 0px;
 }
@@ -154,11 +180,11 @@ header h1{
 
 footer{
     display: flex;
+    position: relative;
     justify-content: center;
-    align-content: stretch;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    padding: 10px;
 }
 
 header nav{
@@ -174,9 +200,10 @@ header a{
     color:azure;
 }
 
+
+
 @media screen and (max-width: 768px) {
-    main .about_me, main .class, main .contact, main header{
+    .head_section h3 pre, main .class, main .contact, main header{
         flex-direction: column;
     }
-
 }
