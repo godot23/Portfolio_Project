@@ -9,7 +9,7 @@ The links at the top will lead to each corresponding section. Once I have a proj
 
 ## Credits
 
-The background image is an image released under a creative common license by Backgrounds Etc.
+"Swirly Flowers Background Stock Texture" by backgroundsetc is licensed under CC BY 2.0.
 
 # License
 Copyright <2023> <Jason Navon>
